@@ -5,18 +5,18 @@ package com.sutao.entity;
  */
 public class UserEntity {
 
-    private String userId;
+    private String uId;
 
     private String userName;
 
     private String password;
 
-    public String getUserId() {
-        return userId;
+    public String getUId() {
+        return uId;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setUId(String userId) {
+        this.uId = uId;
     }
 
     public String getUserName() {
@@ -33,5 +33,14 @@ public class UserEntity {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "UserEntity{" +
+                "userId='" + uId + '\'' +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 }
